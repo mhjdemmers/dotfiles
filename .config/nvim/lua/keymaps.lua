@@ -40,8 +40,8 @@ vim.keymap.set('n', '<leader>tw', function()
   print('Line wrap: ' .. (vim.wo.wrap and 'Enabled' or 'Disabled'))
 end, { desc = '[T]oggle line [W]rap' })
 
--- Toggle Transparency
-vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTransparent<CR>', { desc = '[T]oggle [T]ransparency' })
+-- -- Toggle Transparency
+-- vim.keymap.set('n', '<leader>tt', '<cmd>TransparentToggle<CR>', { desc = '[T]oggle [T]ransparency' })
 
 -- Buffer keymaps
 -- Switch to the alternative buffer

@@ -72,7 +72,7 @@ vim.opt.tabstop = 4
 vim.o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
 
 -- Line Ruler
-vim.opt.colorcolumn = '80' -- Add rulers at 80 and 100 columns
+vim.opt.colorcolumn = '80' -- Add rulers at 80
 vim.api.nvim_set_hl(0, 'ColorColumn', { bg = '#222222' })
 
 -- -- Code folding
