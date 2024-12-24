@@ -220,6 +220,7 @@ require('lazy').setup({
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>b', group = '[B]uffers' },
+        { '<leader>x', group = 'Trouble' },
       },
     },
   },
