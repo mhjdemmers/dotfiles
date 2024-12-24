@@ -140,6 +140,7 @@ export PATH=~/bin:$PATH
 
 # alias fd=fdfind
 alias vim=nvim
+alias lg=lazygit
 
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
