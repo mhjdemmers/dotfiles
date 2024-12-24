@@ -97,3 +97,5 @@ vim.g.clipboard = {
   },
   cache_enabled = 0,
 }
+
+vim.g.python3_host_prog = '~/.config/nvim/env/bin/python'
