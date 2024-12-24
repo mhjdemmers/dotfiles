@@ -83,3 +83,17 @@ vim.api.nvim_set_hl(0, 'ColorColumn', { bg = '#222222' })
 -- vim.opt.foldlevel = 99
 -- vim.opt.foldlevelstart = 99
 -- vim.opt.foldnestmax = 4
+
+-- clipboard fix wsl
+vim.g.clipboard = {
+  name = 'win32yank',
+  copy = {
+    ['+'] = 'clip.exe',
+    ['*'] = 'clip.exe',
+  },
+  paste = {
+    ['+'] = 'powershell.exe -c Get-Clipboard',
+    ['*'] = 'powershell.exe -c Get-Clipboard',
+  },
+  cache_enabled = 0,
+}
