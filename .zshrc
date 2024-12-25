@@ -147,3 +147,7 @@ eval $(thefuck --alias fk)
 
 # --- zoxide (better cd) ---
 eval "$(zoxide init --cmd cd zsh)"
+
+# Start Keychain and add SSH keys
+eval $(keychain --eval --quiet id_rsa)
+
