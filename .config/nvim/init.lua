@@ -543,7 +543,7 @@ require('lazy').setup({
       -- end
 
       --
-      require('mini.tabline').setup()
+      -- require('mini.tabline').setup()
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
@@ -574,6 +574,7 @@ require('lazy').setup({
         'javascript',
         'json',
         'css',
+        'regex',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
