@@ -5,6 +5,7 @@ return { -- You can easily change to a different colorscheme.
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
   -- 'rebelot/kanagawa.nvim',
   'scottmckendry/cyberdream.nvim',
+  -- 'miikanissi/modus-themes.nvim',
   priority = 1000, -- Make sure to load this before all the other start plugins.
   init = function()
     -- require('kanagawa').setup {
@@ -47,22 +48,12 @@ return { -- You can easily change to a different colorscheme.
       borderless_telescope = false,
     }
 
-    -- Add a custom keybinding to toggle the colorscheme
-    vim.api.nvim_set_keymap('n', '<leader>tt', ':CyberdreamToggleMode<CR>', { noremap = true, silent = true })
-    -- The event data property will contain a string with either "default" or "light" respectively
-    vim.api.nvim_create_autocmd('User', {
-      pattern = 'CyberdreamToggleMode',
-      callback = function(event)
-        -- Your custom code here!
-        -- For example, notify the user that the colorscheme has been toggled
-        print('Switched to ' .. event.data .. ' mode!')
-      end,
-    })
     -- Load the colorscheme here.
     -- Like many other themes, this one has different styles, and you could load
     -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
     -- vim.cmd.colorscheme 'kanagawa'
     vim.cmd.colorscheme 'cyberdream'
+    -- vim.cmd.colorscheme 'modus_vivendi'
 
     -- Scrollbar
     vim.api.nvim_set_hl(0, 'Scrollbar', { bg = '#000000', fg = '#ffffff' })
