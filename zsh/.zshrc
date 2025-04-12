@@ -79,6 +79,8 @@ source $ZSH/oh-my-zsh.sh
 
 export XDG_CONFIG_HOME=~/.config
 
+export EDITOR="nvim"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -144,6 +146,7 @@ export PATH=~/bin:$PATH
 # alias fd=fdfind
 alias vim=nvim
 alias lg=lazygit
+alias y=yazi
 
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
