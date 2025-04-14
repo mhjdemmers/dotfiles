@@ -147,9 +147,12 @@ export PATH=~/bin:$PATH
 alias vim=nvim
 alias lg=lazygit
 alias y=yazi
+alias neofetch=fastfetch
 
-eval $(thefuck --alias)
-eval $(thefuck --alias fk)
+# eza
+alias ls='eza --group-directories-first --icons --color=always --git'
+alias ll='eza -l --git'
+alias la='eza -la'
 
 # --- zoxide (better cd) ---
 eval "$(zoxide init --cmd cd zsh)"
