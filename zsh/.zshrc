@@ -148,6 +148,7 @@ alias vim=nvim
 alias lg=lazygit
 alias y=yazi
 alias neofetch=fastfetch
+alias hx=helix
 
 # eza
 alias ls='eza --group-directories-first --icons --color=always --git'
