@@ -149,6 +149,8 @@ alias lg=lazygit
 alias y=yazi
 alias neofetch=fastfetch
 alias hx=helix
+alias vide='neovide.exe --wsl'
+alias neovide='neovide.exe --wsl'
 
 # eza
 alias ls='eza --group-directories-first --icons --color=always --git'
