@@ -146,7 +146,7 @@ export PATH=~/bin:$PATH
 # alias fd=fdfind
 alias vim=nvim
 alias lg=lazygit
-alias y=yazi
+# alias y=yazi
 alias neofetch=fastfetch
 alias hx=helix
 alias vide='neovide.exe --wsl'
@@ -156,6 +156,16 @@ alias neovide='neovide.exe --wsl'
 alias ls='eza --group-directories-first --icons --color=always --git'
 alias ll='eza -l --git'
 alias la='eza -la'
+
+# yazi
+function y() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
+}
 
 # --- zoxide (better cd) ---
 eval "$(zoxide init --cmd cd zsh)"
