@@ -296,6 +296,7 @@ return {
         'prettier',
         'eslint_d',
         'golangci-lint',
+        'markdownlint',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
