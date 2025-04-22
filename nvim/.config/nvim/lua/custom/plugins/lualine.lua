@@ -5,7 +5,10 @@ local function lsp_client_names()
   end
   local names = {}
   for _, client in ipairs(buf_clients) do
-    table.insert(names, client.name)
+    if client.name ~= 'GitHub Copilot' then
+      -- Exclude GitHub Copilot from the list
+      table.insert(names, client.name)
+    end
   end
   return '  ' .. table.concat(names, ', ')
 end
