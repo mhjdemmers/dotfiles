@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 export XDG_CONFIG_HOME=~/.config
 
 export EDITOR="nvim"
+export SUDO_EDITOR="nvim"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
