@@ -290,7 +290,7 @@ return {
         'stylua', -- Used to format Lua code
         'gopls',
         'ts_ls',
-        'hls',
+        -- 'hls',
         'html',
         'templ',
         'prettier',
