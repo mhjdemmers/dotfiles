@@ -246,7 +246,7 @@ return {
           },
         },
         html = {},
-        hls = {},
+        -- hls = {},
         templ = {},
         pyright = {},
         -- rust_analyzer = {},
