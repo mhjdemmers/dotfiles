@@ -100,8 +100,6 @@ if vim.fn.has 'wsl' == 1 then
     },
     cache_enabled = 0,
   }
-else
-  vim.opt.clipboard = 'unnamedplus'
 end
 
 vim.g.python3_host_prog = '~/.config/nvim/env/bin/python'
