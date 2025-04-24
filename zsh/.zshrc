@@ -172,5 +172,5 @@ function y() {
 eval "$(zoxide init --cmd cd zsh)"
 
 # Start Keychain and add SSH keys
-eval $(keychain --eval --quiet id_ed25519 id_rsa)
+eval $(keychain --eval --quiet id_ed25519 id_rsa 2>/dev/null)
 
