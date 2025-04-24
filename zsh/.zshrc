@@ -152,6 +152,7 @@ alias neofetch=fastfetch
 alias hx=helix
 alias vide='neovide.exe --wsl'
 alias neovide='neovide.exe --wsl'
+alias desk='ssh mareno@desktop-1rjucgu'
 
 # eza
 alias ls='eza --group-directories-first --icons --color=always --git'
