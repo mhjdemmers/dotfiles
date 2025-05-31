@@ -175,3 +175,19 @@ eval "$(zoxide init --cmd cd zsh)"
 # Start Keychain and add SSH keys
 eval $(keychain --eval --quiet id_ed25519 id_rsa 2>/dev/null)
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/mareno/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/mareno/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mareno/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/mareno/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
