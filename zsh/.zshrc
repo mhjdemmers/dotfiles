@@ -147,7 +147,6 @@ export PATH=~/bin:$PATH
 # alias fd=fdfind
 alias vim=nvim
 alias lg=lazygit
-# alias y=yazi
 alias neofetch=fastfetch
 alias hx=helix
 alias vide='neovide.exe --wsl'
@@ -190,4 +189,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+alias venv='source .venv/bin/activate'
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
