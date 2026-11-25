@@ -1,5 +1,5 @@
-font-family =
-theme = rose-pine
+# Ghostty 1.2+ uses title-case theme names; check with `ghostty +list-themes`
+theme = Rose Pine
 # background = black
 background-opacity = 0.7
 
