@@ -27,7 +27,7 @@ Hyprland stack: `hyprland hyprlock hypridle hyprpaper hyprshot waybar rofi waypa
 Terminal and tools: `ghostty zsh tmux zellij neovim yazi lazygit fzf fd ripgrep eza zoxide`
 `keychain fastfetch helix mise`.
 
-Fonts: `ttf-jetbrains-mono-nerd`.
+Fonts: `ttf-jetbrains-mono-nerd otf-font-awesome` (waybar uses Font Awesome 5 icons for charging, temperature, ethernet and headsets).
 
 ## Notes
 
