@@ -102,4 +102,7 @@ if vim.fn.has 'wsl' == 1 then
   }
 end
 
-vim.g.python3_host_prog = '~/.config/nvim/env/bin/python'
+-- No plugins here use the Python, Perl or Ruby providers, so turn them off.
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
