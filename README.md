@@ -22,7 +22,7 @@ Put machine-specific shell stuff in `~/.zshrc.local` (not tracked).
 ## Packages
 
 Hyprland stack: `hyprland hyprlock hypridle hyprpaper hyprshot waybar rofi waypaper`
-`brightnessctl playerctl wireplumber` and `rose-pine-hyprcursor` (AUR).
+`brightnessctl playerctl wireplumber xdg-desktop-portal-gtk` and `rose-pine-hyprcursor` (AUR).
 
 Terminal and tools: `ghostty zsh tmux zellij neovim yazi lazygit fzf fd ripgrep eza zoxide`
 `keychain fastfetch helix mise`.
