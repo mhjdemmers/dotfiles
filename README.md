@@ -29,6 +29,17 @@ Terminal and tools: `ghostty zsh tmux zellij neovim yazi lazygit fzf fd ripgrep 
 
 Fonts: `ttf-jetbrains-mono-nerd`. All waybar icons come from this font, so no Font Awesome is needed.
 
+## Login screen
+
+SDDM with the [SilentSDDM](https://github.com/uiriansan/SilentSDDM) theme in Rosé Pine colors.
+`system/` is not a stow package (its files go to `/etc` and `/usr/share`); install it with:
+
+    yay -S sddm-silent-theme
+    ~/dotfiles/system/sddm/install.sh
+
+Re-run `install.sh` after a `sddm-silent-theme` update, or to change the login wallpaper
+(`install.sh path/to/image`).
+
 ## Notes
 
 - `hyprland.lua` uses the Lua config format (Hyprland 0.55+). Colors live in

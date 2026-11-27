@@ -1,0 +1,2 @@
+# Not a stow package: these files go to /etc and /usr/share, see sddm/install.sh.
+.*
