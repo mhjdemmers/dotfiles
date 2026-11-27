@@ -14,7 +14,7 @@ hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    scale    = "auto",
+    scale    = 1.25, -- 15" 1920x1080; "auto" picked 1.5, which is too large
 })
 
 
