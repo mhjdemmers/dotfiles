@@ -45,7 +45,7 @@ Re-run `install.sh` after a `sddm-silent-theme` update, or to change the login w
 - `hyprland.lua` uses the Lua config format (Hyprland 0.55+). Colors live in
   `rose-pine.lua`; switch the `require` to `rose-pine-dawn` for the light theme.
 - `rose-pine.conf` / `rose-pine-dawn.conf` are still needed: hyprlock reads them.
-- The lock screen and rofi use `~/.config/rofi/.current_wallpaper`, which waypaper
+- The lock screen uses `~/.config/rofi/.current_wallpaper`, which waypaper
   writes when you pick a wallpaper. Pick one once after installing.
 - `hypridle.conf` targets the ThinkPad keyboard backlight (`tpacpi::kbd_backlight`).
   Check the name on other laptops with `brightnessctl -l`.
