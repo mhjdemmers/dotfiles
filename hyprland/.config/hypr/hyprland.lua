@@ -190,7 +190,10 @@ hl.bind(mainMod .. " + Space",  hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P",      hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + V",      hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + F",      hl.dsp.window.fullscreen({ action = "toggle" }))
-hl.bind(mainMod .. " + B",      hl.dsp.exec_cmd(browser))
+-- Browser, Obsidian and Claude: jump to their workspace if already open, otherwise start them
+hl.bind(mainMod .. " + B",      hl.dsp.exec_cmd([[hyprctl clients | grep -q 'class: firefox' && hyprctl dispatch 'hl.dsp.focus({ workspace = 2 })' || ]] .. browser))
+hl.bind(mainMod .. " + O",      hl.dsp.exec_cmd([[hyprctl clients | grep -q 'class: md.obsidian.Obsidian' && hyprctl dispatch 'hl.dsp.focus({ workspace = 3 })' || obsidian]]))
+hl.bind(mainMod .. " + C",      hl.dsp.exec_cmd([[hyprctl clients | grep -q 'class: com.anthropic.Claude' && hyprctl dispatch 'hl.dsp.focus({ workspace = 4 })' || claude-desktop]]))
 
 -- Lock screen (the old config used an undefined $SUPER_SHIFT variable here, so this bind never worked)
 hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.exec_cmd("hyprlock"))
