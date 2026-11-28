@@ -164,6 +164,11 @@ hl.config({
         workspace_swipe_direction_lock = true,
         workspace_swipe_forever        = false,
     },
+
+    binds = {
+        -- Super+N on the workspace you're already on jumps back to the previous one
+        workspace_back_and_forth = true,
+    },
 })
 
 -- 3-finger horizontal swipe switches workspaces
@@ -246,8 +251,10 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 --------------------------------
 
 hl.window_rule({ name = "float-volume-control", match = { title = "^(Volume Control)$" }, float = true })
-hl.window_rule({ name = "firefox-on-2",         match = { class = "^(firefox)$" },        workspace = "2" })
-hl.window_rule({ name = "discord-on-4",         match = { class = "^(discord)$" },        workspace = "4" })
+-- Workspaces: 1 = code (terminal/editor, by habit), 2 = browser, 3 = Obsidian, 4 = Claude
+hl.window_rule({ name = "firefox-on-2",         match = { class = "^(firefox)$" },              workspace = "2" })
+hl.window_rule({ name = "obsidian-on-3",        match = { class = "^(md\\.obsidian\\.Obsidian)$" }, workspace = "3" })
+hl.window_rule({ name = "claude-on-4",          match = { class = "^(com\\.anthropic\\.Claude)$" }, workspace = "4" })
 
 -- Ignore maximize requests from apps
 hl.window_rule({
