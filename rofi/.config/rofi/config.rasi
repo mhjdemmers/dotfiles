@@ -20,6 +20,13 @@ configuration {
     rose:          #ebbcba;
     iris:          #c4a7e7;
     highlight-med: #403d52;
+    gold:          #f6c177;
+    foam:          #9ccfd8;
+
+    /* Colors of the "Apps" prompt, the text you type and the app list */
+    prompt-color: @fg;
+    entry-color:  @iris;
+    list-color:   @fg;
 
     font:             "Red Hat Display 12";
     background-color: transparent;
@@ -53,12 +60,13 @@ inputbar {
 }
 
 prompt {
-    text-color: @iris;
+    text-color: @prompt-color;
+    font:       "Red Hat Display Bold 12";
 }
 
 entry {
     expand:            true;
-    text-color:        #e0def4;
+    text-color:        @entry-color;
     placeholder:       "Search";
     placeholder-color: @subtle;
 }
@@ -93,12 +101,12 @@ element-text {
 element normal.normal,
 element alternate.normal {
     background-color: transparent;
-    text-color:       @fg;
+    text-color:       @list-color;
 }
 
 element selected.normal {
     background-color: @highlight-med;
-    text-color:       @fg;
+    text-color:       @list-color;
 }
 
 element normal.urgent,
